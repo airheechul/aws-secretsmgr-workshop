@@ -263,18 +263,17 @@
 
       
         
+  
+  
+    <li class="md-tabs__item">
       
-        
-  <li class="md-tabs__item">
-    
-      <a href="1_RotatePrivateRDS/" title="Amazon RDS" class="md-tabs__link md-tabs__link--active">
-        Amazon RDS
-      </a>
-    
-  </li>
+        <a href="RDSFargateRound/" title="RDS and Fargate" class="md-tabs__link">
+          RDS and Fargate
+        </a>
+      
+    </li>
+  
 
-      
-        
       
         
       
@@ -364,10 +363,39 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview
+      </label>
+    
     <a href="." title="Overview" class="md-nav__link md-nav__link--active">
       Overview
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#published-rounds" title="Published rounds" class="md-nav__link">
+    Published rounds
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -376,34 +404,94 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      RDS and Fargate
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        RDS and Fargate
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="getting-started/" title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="RDSFargateRound/" title="Scenario" class="md-nav__link">
+      Scenario
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="1_RotatePrivateRDS/" title="Amazon RDS" class="md-nav__link">
-      Amazon RDS
+    <a href="RDSFargateRound/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="2_RotatePrivateRDSECSArch/README.md" title="Amazon ECS" class="md-nav__link">
-      Amazon ECS
+    <a href="RDSFargateRound/build/" title="Build phase" class="md-nav__link">
+      Build phase
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="RDSFargateRound/RDS/" title="RDS phase" class="md-nav__link">
+      RDS phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="RDSFargateRound/Fargate/" title="Fargate phase" class="md-nav__link">
+      Fargate phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="RDSFargateRound/cleanup/" title="Clean up phase" class="md-nav__link">
+      Clean up phase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -425,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="license.md" title="License" class="md-nav__link">
+    <a href="https://github.com/aws-samples/aws-secretsmgr-workshop/blob/master/LICENSE" title="License" class="md-nav__link">
       License
     </a>
   </li>
@@ -448,6 +536,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#published-rounds" title="Published rounds" class="md-nav__link">
+    Published rounds
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -462,14 +566,21 @@
                 
                 
                 <h1 id="secrets-manager-workshop">Secrets Manager Workshop</h1>
-<p>The Secrets Manager Workshop guides you through the use of AWS Secrets Manager.  You will first use Secrets Manager with the Amazon Relational Database Service (RDS).  You will then learn how to use Secrets Manager with the Amazon Elastic Container Service (ECS).</p>
+<p>The Secrets Manager Workshop is a collection of individual "rounds" covering the usage of AWS Secrets Manager. Each round can be done separately and there is no dependency between the rounds. Each round (workshop) takes 1 hour.</p>
 <ul>
 <li><strong>Level</strong>: 300</li>
-<li><strong>Duration</strong>: one hour</li>
+<li><strong>Duration</strong>: Each round takes one hour and can be done separately:<ul>
+<li>Using Secrets Manager with RDS and Fargate (one hour)</li>
+</ul>
+</li>
 <li><strong>CSF Functions</strong>: Protect</li>
 <li><strong>CAF Components</strong>: Preventive</li>
 <li><strong>Prerequisites</strong>: AWS Account, IAM User (with admin permissions)</li>
 </ul>
+<h2 id="published-rounds">Published rounds</h2>
+<ol>
+<li><a href="RDSFargateRound/">Using Secrets Manager with RDS and Fargate</a></li>
+</ol>
                 
                   
                 
@@ -491,13 +602,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="RDSFargateRound/" title="Scenario" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Getting Started
+                Scenario
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
